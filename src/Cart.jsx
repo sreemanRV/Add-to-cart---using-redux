@@ -3,6 +3,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import Navbar from './Navbar.jsx'
 import Footer from './Footer.jsx'
+import { NavLink } from 'react-router-dom'
 import { RiDeleteBin6Line } from "react-icons/ri";
 import {useSelector,useDispatch} from 'react-redux'
 import { deleteCart,incrementItem ,decrementItem} from './cartSlice';
