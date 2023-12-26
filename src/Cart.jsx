@@ -55,9 +55,16 @@ function Cart({}){
          
                     )})
             }
-            {cartItems.length >=1 && (<div className="cart-total">
-                    Total:<span style={{textDecoration:'none'}}> ₹ {total}</span>
-            </div>)
+            {cartItems.length >=1 && (<div className="buydiv">
+            <div className="cart-total">
+            Total:<span style={{textDecoration:'none'}}> ₹ {total}</span>
+            </div>
+            
+            <div className="">
+            <NavLink to='/checkout' style={{color:'#fff'}}><button className="cart-buy">Place Order</button></NavLink>
+            </div>   
+            </div>
+                          )
             }
             </div> 
      </div>
