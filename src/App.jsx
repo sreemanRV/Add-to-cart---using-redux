@@ -9,6 +9,7 @@ import Herosection from './Herosection.jsx'
 import  Products  from './Prod.jsx';
 import About from './About.jsx'
 import Cart from './Cart.jsx'
+import Checkout from './checkout.jsx'
 import { BrowserRouter,Route,Routes } from 'react-router-dom'
 
 
@@ -30,6 +31,7 @@ function App() {
           <Route path='/' element={<Herosection />} />
           <Route path='/about' element={<About />}/>
           <Route path='/cart' element={<Cart />}/>
+          <Route path='/checkout' element={<Checkout />}/>
     </Routes>
     </BrowserRouter>
     
