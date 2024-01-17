@@ -5,7 +5,7 @@ import { FaAngleDown } from "react-icons/fa6";
 import {useSelector,useDispatch} from 'react-redux'
 import {useState} from 'react'
 import Brands from './Brands'
-import {logoutUser} from './authenticationSlice.jsx'
+import {logoutUser} from './authenticationslice.jsx'
 
 function Navbar(){
     const {cartItems}= useSelector((state)=>state.cart);
