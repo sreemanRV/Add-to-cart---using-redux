@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { auth } from './firebase-config';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { loginUser } from './authenticationSlice';
+import { loginUser } from './authenticationslice';
 import { NavLink } from 'react-router-dom';
 
 function Login() {
