@@ -15,12 +15,12 @@ function Slider(){
     
     let sliderBoxStyle = {
       height: "730px",
-      width: "1590px",
+      width:"1575px",
     };
     
     let itemsStyle = {
       height: "755px",
-      width: "1790px",
+      width:"1575px",
       padding: "0px",
       borderRadius: "4px",
       margin: "0px 0px",
