@@ -9,11 +9,7 @@ import { deleteCart,incrementItem ,decrementItem} from './cartSlice';
 function Cart(){
     const dispatch = useDispatch();
      const { cartItems } = useSelector((state) => state.cart);
-      const total = cartItems.map(item => item.price * item.quantity).reduce((prevValue, currValue) => prevValue + currValue, 0);
-      
-     const handleRemove = (itemid) => {
-        dispatch(deleteCart(itemid));
-    };
+    const total = cartItems.map(item => item.price * item.quantity).reduce((prevValue, currValue) => prevValue + currValue, 0);
     const handleIncrement = (itemid)=>{
         dispatch(incrementItem(itemid));
     };
@@ -46,7 +42,7 @@ function Cart(){
             </div>
             ₹{qtyPrice}
             <div>
-            <RiDeleteBin6Line onClick={()=>{handleRemove(items.id);}} className="remove-cart" />
+            <RiDeleteBin6Line onClick={()=>{dispatch(deleteCart(items.id));}} className="remove-cart" />
             </div>
             </div>
             </div>
