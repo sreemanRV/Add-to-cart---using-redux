@@ -218,14 +218,12 @@ span{
 .aboutus-container{
     height:2540px;
     width: 1575px;
-    
 }
 .sdimg{
    rotate: 50deg;
 }
 .aboutflex{
     display: flex;
-    gap:27rem;
     align-items: center;
     margin-left: 40px;
 }
@@ -239,7 +237,11 @@ span{
     text-align: center;
 }
 .third{
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 40px;
+   
 }
 .aboutus-info{
     background-color: #D75742;
@@ -249,7 +251,6 @@ span{
     border-radius: 15px;
     word-break:normal; 
     margin-right: 40px;
-    
     padding: 30px;
 }
 .aboutheading{
