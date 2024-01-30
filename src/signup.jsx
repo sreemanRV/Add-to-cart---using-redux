@@ -2,12 +2,14 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { auth } from "./firebase-config.js";
 import {NavLink} from "react-router-dom";
+import {useNavigate} from 'react-router-dom';
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confMessage,setConfMessage] = useState("");
   const [errorMessage,setErrorMessage] =useState("");
+  const navigate = useNavigate();
 
   const signUp = (e) => {
     e.preventDefault();
@@ -15,6 +17,7 @@ const SignUp = () => {
       .then((userCredential) => {
         console.log(userCredential);
         setConfMessage("Your Account Has Been Created Successfully!");
+        navigate('/login')
       })
       .catch((error) => {
         console.log(error);
