@@ -14,14 +14,14 @@ function About(){
             <div className="aboutflex"><div className="first"><h2 style={{color:"#D75742"}}>RESPONSIVE CUSHION</h2><p style={{fontSize:"36px"}}>Heel and forefoot brand Zoom Air<br/> units makes for a soft,responsive<br/> and springy ride</p></div><div><img className="sdimg" src="shoe.png" alt="" /></div></div>
             <div className="second"><h2 style={{color:"#D75742"}}>SECURE COMFORT</h2><p style={{fontSize:"36px"}}>A consistent fit with engineered<br/> mesh allows for breathability,<br/> while ultralight, super strong<br/> flywire cables provide incredible<br/> support</p></div>
             <div className="third"><div><img className="sdimg" src="ad.png" /></div><div className=''><h2 style={{color:"#D75742"}}>SMOOTH FOOTSTRIKE</h2><p style={{fontSize:"36px"}}> The Heel is designed to support<br/> your natural range of motion<br/> and the outsole works to absorb<br/> impact cushion on for a soft and<br/> smooth transition</p></div></div>
-         <div style={{marginLeft:"40px"}}>
+         <div className='align-footer-dtls' style={{marginLeft:"40px"}}>
          <h3>Innovati<span>on</span></h3>
 
 
 <p>Seek And Find In Every Action A Way To Do Things Better Growth Keep progressing by adjusting to an ever-changing world
 Explore new markets where we do not have a presence A Way To Do Things Better Growth Keep progressing by adjusting to an ever-changing world Every Action A Way To Do stuffs A Way To Do Things Better</p>
          </div>
-         <div>
+         <div className='align-footer-dtls'>
          <p style={{marginLeft:"40px"}}><span className="quote">"</span>In line with our approach to always be A Little Better, Never Perfect, we remain committed to making small-yet-consistent changes that accelerate our goal of being a better business<span className="quote">"</span></p>
          </div>
          </div>
