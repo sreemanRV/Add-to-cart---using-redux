@@ -35,7 +35,7 @@ const cartSlice = createSlice({
                 }
                 return item;
             }).filter(item => item.quantity !== 0);
-        }
+        },
     removeCart(state){
         state.cartItems = [];
 }
