@@ -38,6 +38,7 @@ const cartSlice = createSlice({
         },
     removeCart(state){
         state.cartItems = [];
+    }
 }
 });
 
