@@ -19,7 +19,7 @@ function Slider(){
     };
     
     let itemsStyle = {
-      height: "755px",
+      height: "730px",
       width:"1575px",
       padding: "0px",
       borderRadius: "4px",
