@@ -4,7 +4,7 @@ import Navbar from './Navbar.jsx'
 import { NavLink } from 'react-router-dom'
 import { RiDeleteBin6Line } from "react-icons/ri";
 import {useSelector,useDispatch} from 'react-redux'
-import { deleteCart,incrementItem ,decrementItem,clearCart} from './cartSlice';
+import { deleteCart,incrementItem ,decrementItem,removeCart} from './cartSlice';
 
 function Cart(){
     const dispatch = useDispatch();
