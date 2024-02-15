@@ -4,7 +4,7 @@ import Navbar from './Navbar.jsx'
 import { NavLink } from 'react-router-dom'
 import { RiDeleteBin6Line } from "react-icons/ri";
 import {useSelector,useDispatch} from 'react-redux'
-import { deleteCart,incrementItem ,decrementItem,removeCart} from './cartSlice';
+import { deleteCart,incrementItem ,decrementItem,clearCart} from './cartSlice';
 
 function Cart(){
     const dispatch = useDispatch();
@@ -21,7 +21,8 @@ function Cart(){
             <div>
             <Navbar />
             <div className='empty-cart'>
-            <p style={{textAlign:'center'}}>Cart items</p>
+                {cartItems.length>=1 && (<p style={{textAlign:'center'}}>Cart items</p>)}
+
          {cartItems.map((items)=>{
              const qtyPrice = items.price*items.quantity;
              return(
@@ -51,18 +52,20 @@ function Cart(){
          
                     )})
             }
-            
+            {cartItems.length<=0 &&(<div className='cart-empty'>            <div>
+                    <img className='sad' src='emptycart.png' alt='empty' />
+                </div> <h2>Your Cart is Empty!</h2>                 
+</div>)}
             {cartItems.length >=1 && (<div className="buydiv">
             <div className="cart-total">
             Total:<span style={{textDecoration:'none'}}> ₹ {total}</span>
             </div>
             
             <div className="">
-            <NavLink to='/checkout' style={{color:'#fff'}}><button onClick={()=>{dispatch(removeCart())}} className="cart-buy">Place Order</button></NavLink>
+            <NavLink to='/checkout' style={{color:'#fff'}}><button onClick={()=>{dispatch(clearCart())}} className="cart-buy">Place Order</button></NavLink>
             </div>   
             </div>
-                          )
-                  
+            )       
             }
             
             </div> 
