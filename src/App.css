@@ -430,3 +430,11 @@ span{
 .align-footer-dtls{
    margin-right: 40px;
 }
+.sad{
+    height: 450px;
+    width: 450px;
+    margin-left: 20px;
+}
+.cart-empty{
+    margin-left: 550px;
+}
